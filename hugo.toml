@@ -1,0 +1,38 @@
+baseURL = 'https://edchtzwe.github.io/blog/'
+languageCode = 'en-us'
+title = 'Franz Hermann'
+theme = 'PaperMod'
+
+[params]
+  author = 'Franz Hermann'
+  description = 'Thoughts on engineering, leadership, and building things that matter.'
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  
+  [params.homeInfoParams]
+    Title = "Hi, I'm Franz 👋"
+    Content = "Head of Engineering. I write about software architecture, team dynamics, and the craft of building things."
+  
+  [params.profileMode]
+    enabled = true
+    title = "Franz Hermann"
+    subtitle = "Head of Engineering • Building things that matter"
+
+[[menu.main]]
+  name = 'Posts'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  name = 'Tags'
+  url = '/tags/'
+  weight = 20
+
+[[menu.main]]
+  name = 'Search'
+  url = '/search/'
+  weight = 30
