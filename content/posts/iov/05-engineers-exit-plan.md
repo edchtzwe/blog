@@ -1,5 +1,5 @@
 +++
-title = '5. The Engineer\'s Exit Plan: When to Walk Away'
+title = "5. The Engineer's Exit Plan: When to Walk Away"
 date = '2026-05-30'
 draft = true
 tags = ['career', 'strategy', 'engineering-leadership']
