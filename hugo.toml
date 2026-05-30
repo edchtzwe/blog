@@ -1,10 +1,10 @@
 baseURL = 'https://edchtzwe.github.io/blog/'
 languageCode = 'en-us'
-title = 'Franz Hermann'
+title = 'Edmund Chong'
 theme = 'PaperMod'
 
 [params]
-  author = 'Franz Hermann'
+  author = 'Edmund Chong'
   description = 'Thoughts on engineering, leadership, and building things that matter.'
   ShowReadingTime = true
   ShowShareButtons = true
@@ -14,7 +14,7 @@ theme = 'PaperMod'
   ShowToc = true
   
   [params.homeInfoParams]
-    Title = "Hi, I'm Franz 👋"
+    Title = "Hi, I'm Edmund 👋"
     Content = "Head of Engineering. I write about software architecture, team dynamics, and the craft of building things."
   
   [params.profileMode]
