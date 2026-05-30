@@ -18,9 +18,7 @@ theme = 'PaperMod'
     Content = "Head of Engineering. I write about software architecture, team dynamics, and the craft of building things."
   
   [params.profileMode]
-    enabled = true
-    title = "Franz Hermann"
-    subtitle = "Head of Engineering • Building things that matter"
+    enabled = false
 
 [[menu.main]]
   name = 'Posts'
