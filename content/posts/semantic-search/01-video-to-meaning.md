@@ -18,7 +18,9 @@ The video never stays. The metadata does. And the metadata is all you need for s
 
 ## What I Wanted
 
-A system where you type *"find where they talk about fermentation in sourdough"* and get the exact segment back — not the whole cooking show. No manual tagging. No platform lock-in. Fully automated, from raw video to searchable index.
+A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. If you know, you know.
+
+No manual tagging. No platform lock-in. Raw files in, structured metadata out.
 
 ## What I Built
 
