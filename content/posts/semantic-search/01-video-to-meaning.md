@@ -15,7 +15,11 @@ There's no data for you to work with. You can't build anything on top of a link.
 
 With structured metadata, you scan the data yourself and decide if it's worth watching. Data you can build with. Links you just click.
 
-So I took a different approach. I wanted privacy and data sovereignty, first. I don't want my video living on someone else's platform.
+## What I Wanted
+
+I didn't want my video sitting on someone else's platform indefinitely. Some clients have specifications that mandate their content never exists off-prem at all. That's non-negotiable.
+
+So I took a different approach. **Upload, extract, purge.**
 
 My pipeline sends video to Gemini just long enough to pull out metadata — transcription, scene detection, semantic structure. Once the metadata is extracted, the file disappears. Gemini's Files API wipes uploads after 48 hours. Vertex AI goes further with no-retention contracts — they don't keep your data at all.
 
