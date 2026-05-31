@@ -1,6 +1,6 @@
 baseURL = 'https://edchtzwe.github.io/blog/'
 languageCode = 'en-us'
-title = 'Franz Hermann'
+title = 'Edmund Chong'
 theme = 'LoveIt'
 
 enableRobotsTXT = true
@@ -16,13 +16,13 @@ enableEmoji = true
   description = "Thoughts on engineering, leadership, and building things that matter."
 
   [params.author]
-    name = "Franz Hermann"
+    name = "Edmund Chong"
 
   [params.header]
     desktopMode = "fixed"
     mobileMode = "auto"
     [params.header.title]
-      name = "Franz Hermann"
+      name = "Edmund Chong"
       typeit = false
 
   [params.footer]
@@ -33,7 +33,7 @@ enableEmoji = true
     since = 2026
 
   [params.app]
-    title = "Franz Hermann"
+    title = "Edmund Chong"
     themeColor = "#161209"
 
   [params.search]
@@ -57,8 +57,8 @@ enableEmoji = true
     [params.home.profile]
       enable = true
       avatarURL = ""
-      title = "Hi, I'm Franz 👋"
-      subtitle = "Head of Engineering. I write about software architecture, team dynamics, and the craft of building things."
+      title = "Hi, I'm Edmund 👋"
+      subtitle = "Senior Software Engineer. I write about software architecture, team dynamics, and the craft of building things."
       typeit = true
       social = true
     [params.home.posts]
