@@ -9,7 +9,13 @@ series = ['Semantic Video Search']
 
 Video is the fastest-growing data type on the internet, and the dumbest.
 
-You can search titles and descriptions. Gemini can even find timestamps inside a YouTube video — not perfectly, but getting there. The catch: your video has to live on YouTube. You hand over ownership, their compression, their terms. Fine for creators. Not fine if you've got proprietary video you can't permanently host on Google's platform.
+You can search titles and descriptions. Gemini can even find timestamped YouTube links for you — and that's all you get. You click it, it opens on YouTube, you watch the video. End of workflow.
+
+There's no data for you to work with. You can't build anything on top of a link. If the first result is wrong, you're stuck — Gemini won't give you a list of alternatives by default anyway. And if it did, you'd have to watch every single one to find what you need.
+
+With structured metadata, you scan the data yourself and decide if it's worth watching. Data you can build with. Links you just click.
+
+And metadata doesn't stop there. Feed it back into AI — via MCP, A2A, or a combination of both — for further enrichment and discovery. The pipeline compounds.
 
 So I took a different approach. **Upload, extract, purge.**
 
