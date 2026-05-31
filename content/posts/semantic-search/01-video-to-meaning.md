@@ -27,9 +27,9 @@ Not every provider works this way. 12 Labs keeps your video. Which means Marengo
 
 With Google Files API, the video never stays for more than 48 hours. You get to keep the metadata, how you store it is up to you. And the metadata is all you need for search — and everything downstream. RAG, MCP tool calls, A2A agent chaining — it all starts with structured data.
 
-On top of that, I wanted actual search. A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. Thanks Vasilios you absolute legend.
-
 No manual tagging. No platform lock-in. Raw files in, structured metadata out.
+
+On top of that, I wanted actual search. A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. Thanks Vasilios you absolute legend.
 
 ## What I Built
 
