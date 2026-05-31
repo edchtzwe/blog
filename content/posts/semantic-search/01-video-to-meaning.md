@@ -8,17 +8,17 @@ series = ['Semantic Video Search']
 
 Video is the fastest-growing data type on the internet, and the dumbest.
 
-You can search the title. You can search the description. You can maybe search auto-generated captions if the platform bothered. But you cannot search what's *inside* the video the way you search text.
+You can search titles and descriptions. Gemini can even find timestamps inside a YouTube video — not perfectly, but getting there. The catch: your video has to live on YouTube. You hand over ownership, their compression, their terms. Fine for creators. Not fine if you've got proprietary video you can't permanently host on Google's platform.
 
-Try this: find me the exact moment in a 38-minute technical talk where the speaker explains why they chose Rust over Go. Google can't do it. YouTube's search will give you the whole video and hope you scrub through it yourself. If you're lucky, someone left a timestamp in the comments.
+So I took a different approach. **Upload, extract, purge.**
 
-That gap — between what video contains and what we can actually search — is what I set out to close.
+My pipeline sends video to Gemini just long enough to pull out metadata — transcription, scene detection, semantic structure. Once the metadata is extracted, the file disappears. Gemini's Files API wipes uploads after 48 hours. Vertex AI goes further with no-retention contracts — they don't keep your data at all. Same deal with other AI providers.
 
-## The Problem in One Sentence
+The video never stays. The metadata does. And the metadata is all you need for search.
 
-Video files are sealed objects. Once rendered, they become opaque blocks of pixels and audio. Platforms can compress them, stream them, and run object detection on them. But they cannot easily answer the question: *"Show me the part where they discuss X."*
+## What I Wanted
 
-I wanted to build a system where you could type a natural language query — something like *"find where they talk about fermentation techniques in sourdough"* — and get back the exact segment, not the whole video. No manual tagging. No human metadata entry. Fully automated, from raw video to searchable index.
+A system where you type *"find where they talk about fermentation in sourdough"* and get the exact segment back — not the whole cooking show. No manual tagging. No platform lock-in. Fully automated, from raw video to searchable index.
 
 ## What I Built
 
