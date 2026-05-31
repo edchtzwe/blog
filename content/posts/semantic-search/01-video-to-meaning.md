@@ -15,19 +15,15 @@ There's no data for you to work with. You can't build anything on top of a link.
 
 With structured metadata, you scan the data yourself and decide if it's worth watching. Data you can build with. Links you just click.
 
-And metadata doesn't stop there. Feed it back into AI — via MCP, A2A, or a combination of both — for further enrichment and discovery. The pipeline compounds.
-
-So I took a different approach. **Upload, extract, purge.**
+So I took a different approach. I wanted privacy and data sovereignty, first. I don't want my video living on someone else's platform.
 
 My pipeline sends video to Gemini just long enough to pull out metadata — transcription, scene detection, semantic structure. Once the metadata is extracted, the file disappears. Gemini's Files API wipes uploads after 48 hours. Vertex AI goes further with no-retention contracts — they don't keep your data at all.
 
 Not every provider works this way. 12 Labs keeps your video. Which means Marengo does too. Which means Bedrock via Marengo does. Read the fine print before you upload anything proprietary.
 
-The video never stays. The metadata does. And the metadata is all you need for search.
+The video never stays. The metadata does. And the metadata is all you need for search — and everything downstream. RAG, MCP tool calls, A2A agent chaining — it all starts with structured data.
 
-## What I Wanted
-
-A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. Thanks Vasilios you absolute legend.
+On top of that, I wanted actual search. A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. Thanks Vasilios you absolute legend.
 
 No manual tagging. No platform lock-in. Raw files in, structured metadata out.
 
