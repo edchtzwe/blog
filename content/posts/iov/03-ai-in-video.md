@@ -3,7 +3,8 @@ title = '3. AI in Video: What is Real, What is Hype, and What Actually Ships'
 date = '2026-05-30'
 draft = true
 tags = ['ai', 'video', 'hype']
-series = ['Video Virtualisation']
+categories = ["Engineering", "Career"]
+series = ["Video Virtualisation"]
 +++
 
 ## The AI Video Landscape (2026)

@@ -3,7 +3,8 @@ title = '1. How I Built a Video Virtualisation Engine From Scratch'
 date = '2026-05-30'
 draft = true
 tags = ['architecture', 'video', 'systems']
-series = ['Video Virtualisation']
+categories = ["Engineering", "Career"]
+series = ["Video Virtualisation"]
 +++
 
 ## Problem

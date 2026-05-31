@@ -3,7 +3,8 @@ title = '7. The Full Architecture: Lessons From Building a Production Search Sys
 date = '2026-05-31'
 draft = true
 tags = ['semantic-search', 'architecture', 'lessons-learned']
-series = ['Semantic Video Search']
+categories = ["NLP", "Video Search"]
+series = ["Semantic Video Search"]
 +++
 
 ## The Full Picture

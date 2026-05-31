@@ -3,6 +3,7 @@ title = 'From Video to Meaning: Why I Built a Semantic Search Engine'
 date = '2026-05-31'
 draft = false
 tags = ['semantic-search', 'video', 'nlp', 'ai']
+categories = ['NLP', 'Video Search']
 series = ['Semantic Video Search']
 +++
 

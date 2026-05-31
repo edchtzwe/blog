@@ -3,7 +3,8 @@ title = '3. Embeddings That Actually Work: Vector Strategies for Video Content'
 date = '2026-05-31'
 draft = true
 tags = ['semantic-search', 'embeddings', 'vector-db']
-series = ['Semantic Video Search']
+categories = ["NLP", "Video Search"]
+series = ["Semantic Video Search"]
 +++
 
 ## What to Embed

@@ -3,7 +3,8 @@ title = "6. Under 5 Seconds: Latency Optimisation Tricks They Don't Teach You"
 date = '2026-05-31'
 draft = true
 tags = ['semantic-search', 'performance', 'optimization']
-series = ['Semantic Video Search']
+categories = ["NLP", "Video Search"]
+series = ["Semantic Video Search"]
 +++
 
 ## The 5-Second Budget

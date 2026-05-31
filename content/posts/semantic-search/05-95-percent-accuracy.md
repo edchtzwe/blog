@@ -3,7 +3,8 @@ title = '5. The 95% Accuracy Play: Validation, Ground Truth, and the Metrics Tha
 date = '2026-05-31'
 draft = true
 tags = ['semantic-search', 'testing', 'metrics']
-series = ['Semantic Video Search']
+categories = ["NLP", "Video Search"]
+series = ["Semantic Video Search"]
 +++
 
 ## Accuracy Means Nothing Without Definition

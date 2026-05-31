@@ -3,7 +3,8 @@ title = '4. Flash Lite, Full Power: Running Semantic Search on a Toaster'
 date = '2026-05-31'
 draft = true
 tags = ['semantic-search', 'optimization', 'models']
-series = ['Semantic Video Search']
+categories = ["NLP", "Video Search"]
+series = ["Semantic Video Search"]
 +++
 
 ## The Constraint

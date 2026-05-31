@@ -3,7 +3,8 @@ title = '2. The Architecture: Reference Files, Content Routing, and the Control 
 date = '2026-05-30'
 draft = true
 tags = ['architecture', 'systems', 'video']
-series = ['Video Virtualisation']
+categories = ["Engineering", "Career"]
+series = ["Video Virtualisation"]
 +++
 
 ## Core Components
