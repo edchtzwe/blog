@@ -12,13 +12,15 @@ You can search titles and descriptions. Gemini can even find timestamps inside a
 
 So I took a different approach. **Upload, extract, purge.**
 
-My pipeline sends video to Gemini just long enough to pull out metadata — transcription, scene detection, semantic structure. Once the metadata is extracted, the file disappears. Gemini's Files API wipes uploads after 48 hours. Vertex AI goes further with no-retention contracts — they don't keep your data at all. Same deal with other AI providers.
+My pipeline sends video to Gemini just long enough to pull out metadata — transcription, scene detection, semantic structure. Once the metadata is extracted, the file disappears. Gemini's Files API wipes uploads after 48 hours. Vertex AI goes further with no-retention contracts — they don't keep your data at all.
+
+Not every provider works this way. 12 Labs keeps your video. Which means Marengo does too. Which means Bedrock via Marengo does. Read the fine print before you upload anything proprietary.
 
 The video never stays. The metadata does. And the metadata is all you need for search.
 
 ## What I Wanted
 
-A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. If you know, you know.
+A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. Thanks Vasilios you absolute legend.
 
 No manual tagging. No platform lock-in. Raw files in, structured metadata out.
 
@@ -38,7 +40,7 @@ There are three problems that make video search genuinely difficult, and they co
 
 **First, video is multimodal.** There's the visual track (what's on screen), the audio track (what's being said), and the structural layer (scene changes, pacing, chapter boundaries). Any one of these is noisy on its own. Putting them together in a way that produces reliable search results is a coordination problem before it's a machine learning problem.
 
-**Second, transcripts are not enough.** A raw transcript gives you words, but words without context fail on semantic queries. "How to make a roux" and "the history of French sauces" might share vocabulary but answer completely different questions. You need to understand what each segment is *about*, not just what words it contains.
+**Second, transcripts are the easy part — and they're not enough.** Getting a clean transcript out of video is straightforward now. My pipeline gives them to you on demand. But a transcript is just words. "How to make a roux" and "the history of French sauces" share vocabulary but answer different questions. You need to understand what each segment is *about*, not just what words it contains. (Stick around — I'll show you how to pull beautiful, structured transcripts with more than just what's said.)
 
 **Third, speed and accuracy pull in opposite directions.** The brute-force approach — transcribe everything, embed everything, run a large model over every possible segment — works fine. It's also slow and expensive. Getting the same quality on a flash lite model, in under five seconds, requires being clever about what you compute and when.
 
@@ -48,11 +50,11 @@ I gave myself specific constraints because constraints force design decisions:
 
 | Constraint | Why It Matters |
 |---|---|
-| Flash lite model | If it requires a data center, it's a demo, not a product |
+| Flash lite model | Fastest and cheapest Google has. Could've used GPT Nano, but one provider keeps things simple. Gemini's the most accessible anyway — $300 signup bonus for 90 days |
 | <5 second response | Search that takes longer than a page load might as well not exist |
 | >95% accuracy | Precision without recall is useless; recall without precision is noise |
 | Solo developer | Nobody to delegate to. Every decision had to earn its complexity |
-| AI-assisted toolchain | I used AI tools heavily — not as a crutch, but as a multiplier |
+| AI-assisted toolchain | Built with the help of the legendary GPT-4.5. Big Bro — my IP — not only wrote itself, it writes most of my code now. AI as multiplier, not crutch |
 
 These constraints shaped every architecture decision that followed. I'll unpack each one in detail over the next posts.
 
@@ -76,6 +78,6 @@ The target was 6-minute videos — trailers, corporate presentations, cooking sh
 
 If you're an engineer building search, working with video, or just curious about what's possible when you combine modern NLP tooling with some creative architecture — this is for you. If you're an investor or executive trying to understand why "AI video search" isn't just another buzzword, this is also for you. The CIO presented an early version of this system to an audience of investors and insiders. The reaction told me the interest is real.
 
-I'm not going to name companies or reveal anything proprietary. This is about architecture, technique, and lessons learned. You should be able to read this series and walk away with enough to build something similar.
+This is about architecture, technique, and lessons learned. You should be able to read this series and walk away with enough to build something similar.
 
 Next up: the ingestion pipeline. How do you take hours of raw video and turn it into something a search engine can actually use?
