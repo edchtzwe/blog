@@ -39,7 +39,7 @@ A semantic video search pipeline. Raw video goes in. Structured, searchable meta
 2. **Embedding** — converting video segments into a vector space where semantic similarity maps to actual meaning
 3. **Search** — natural language queries that retrieve relevant segments with >95% accuracy in under 5 seconds
 
-And I built it to run on a flash lite model. Not a GPU cluster. Not a cloud of TPUs. The kind of hardware you could feasibly run on a decent laptop.
+And I built it to run on a flash lite model. Minimum tokens, maximum output.
 
 ## The Hard Parts
 
@@ -79,11 +79,11 @@ I'm going to walk through the full system, end to end. Not the polished retrospe
 | Part 6 | Under 5 seconds: latency optimisation tricks |
 | Part 7 | The full architecture: what I got right, what I got wrong, and what I'd rebuild |
 
-The target was 6-minute videos — trailers, corporate presentations, cooking shows — the kind of content you find on YouTube. But I stress-tested the pipeline on longer material too. The longest single video I ran through end to end was 38 minutes. It held up.
+The target was 6-minute videos — trailers, corporate presentations, cooking shows — the kind of content you find on YouTube. But I stress-tested the pipeline on longer material too. The longest single video I ran through end to end was 38 minutes 😉. It held up.
 
 ## Who This Is For
 
-If you're an engineer building search, working with video, or just curious about what's possible when you combine modern NLP tooling with some creative architecture — this is for you. If you're an investor or executive trying to understand why "AI video search" isn't just another buzzword, this is also for you. The CIO presented an early version of this system to an audience of investors and insiders. The reaction told me the interest is real.
+If you're an engineer building search, working with video, or just curious about what's possible when you combine modern NLP tooling with some creative architecture — this is for you. If you're an investor or executive trying to understand why "AI video search" isn't just another buzzword, this is also for you.
 
 This is about architecture, technique, and lessons learned. You should be able to read this series and walk away with enough to build something similar.
 
