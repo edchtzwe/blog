@@ -25,7 +25,7 @@ My pipeline sends video to Gemini just long enough to pull out metadata — tran
 
 Not every provider works this way. 12 Labs keeps your video. Which means Marengo does too. Which means Bedrock via Marengo does. Read the fine print before you upload anything proprietary.
 
-The video never stays. The metadata does. And the metadata is all you need for search — and everything downstream. RAG, MCP tool calls, A2A agent chaining — it all starts with structured data.
+With Google Files API, the video never stays for more than 48 hours. You get to keep the metadata, how you store it is up to you. And the metadata is all you need for search — and everything downstream. RAG, MCP tool calls, A2A agent chaining — it all starts with structured data.
 
 On top of that, I wanted actual search. A search engine where you type *"where does he explain how Sovereign manages 2,000 Envoy proxies across 13 regions?"* and get the exact segment. Because yes, I use this to study engineering content too. Thanks Vasilios you absolute legend.
 
