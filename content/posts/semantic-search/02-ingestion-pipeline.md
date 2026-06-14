@@ -1,7 +1,7 @@
 +++
 title = '2. The Ingestion Pipeline: Turning Hours of Video Into Structured Metadata'
 date = '2026-05-31'
-draft = true
+draft = false
 tags = ['semantic-search', 'pipeline', 'nlp']
 categories = ["NLP", "Video Search"]
 series = ["Semantic Video Search"]
