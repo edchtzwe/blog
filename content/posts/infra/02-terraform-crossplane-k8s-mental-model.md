@@ -148,3 +148,7 @@ AI code assistants are great at generating syntax:
 What AI **cannot** do is tell you where the boundary of responsibility belongs. If you let an automated continuous controller manage your foundational VPC routing, a bad sync could take down your entire network. If you rely on point-in-time Terraform for sensitive IAM role bindings, a rogue console edit could sit undetected for months.
 
 When you master the architectural mental model, you stop viewing tools as competing factions. You use Terraform to lay the concrete foundation, and Crossplane inside Kubernetes to govern the living, evolving system.
+
+---
+
+That boundary is only meaningful on top of the platform it governs. [Cloud Services, Part 1](https://edchtzwe.github.io/blog/posts/infra/03-cloud-services-part-1-the-platform/) covers how the pieces actually sit — control plane, nodes, the autoscaling loops, ingress, and the data layer — and [Part 2](https://edchtzwe.github.io/blog/posts/infra/04-cloud-services-part-2-wiring-and-governance/) covers DNS, the reconciliation boundary, and why ECS exists.
