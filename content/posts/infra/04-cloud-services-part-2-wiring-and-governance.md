@@ -1,7 +1,7 @@
 +++
 title = 'Cloud Services, Part 2: DNS, the IaC Boundary, and Why ECS Exists'
 date = '2026-09-17'
-draft = true
+draft = false
 tags = ['dns', 'route53', 'cloud-dns', 'cloudflare', 'godaddy', 'terraform', 'crossplane', 'iam', 'ecs', 'fargate', 'ecr', 'governance', 'architecture', 'infrastructure']
 categories = ["Engineering", "Infrastructure"]
 series = ["Infrastructure"]
