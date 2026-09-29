@@ -55,3 +55,10 @@ This is rapid prototyping only, to get an MVP out the door. MCP servers are almo
 Because the tool wiring is already proven through `InMemoryTransport`, porting over is roughly an hour's work with AI assistance: swap the transport, keep the handlers, keep the context shape.
 
 Sometimes the cleanest architectural choice is just reading the documentation properly.
+
+---
+
+### What to Read Next
+
+- For a deeper architectural breakdown of MCP layers, tool discovery, and cross-language boundaries, check out [Deconstructing MCP: What It Is, What It Solves, and How the Pieces Fit](https://edchtzwe.github.io/blog/posts/ai/02-understanding-mcp-architecture/).
+
