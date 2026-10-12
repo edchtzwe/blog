@@ -1,6 +1,6 @@
 +++
 title = 'The Cost of "Simple" Database Design: Why Early Schema Shortcuts Become Production Disasters'
-date = '2026-10-05'
+date = '2026-10-12'
 draft = false
 tags = ['database', 'postgresql', 'architecture', 'sql', 'backend', 'system-design']
 categories = ["Engineering", "Backend"]
